@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MenuPage = () => {
-  return (
-    <div>MenuPage</div>
-  )
-}
+  return <div>MenuPage</div>;
+};
 
-export default MenuPage
+export default MenuPage;
