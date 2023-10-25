@@ -380,7 +380,7 @@ type Product = {
       title: "Juicy Burgers",
       desc: "Burger Bliss: Juicy patties, bold flavors, and gourmet toppings galore.",
       img: "/temporary/m2.png",
-      color: "black",
+      color: "red",
     },
     {
       id: 3,
