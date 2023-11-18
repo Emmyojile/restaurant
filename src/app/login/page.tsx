@@ -35,7 +35,7 @@ const LoginPage = () => {
             />
             <span>Sign in WIth Facebook</span>
           </button>
-          <p className=" text-sm">
+          <p className=" text-sm rounded-lg">
             Have a Problem?
             <Link className=" underline" href="/">
               Contact Us
