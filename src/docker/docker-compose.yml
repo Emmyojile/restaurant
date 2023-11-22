@@ -4,8 +4,8 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydb
+      POSTGRES_USER: emmyojile
+      POSTGRES_PASSWORD: emmy1599
+      POSTGRES_DB: restaurant
     ports:
-      - 5432:5432
+      - 5431:5431
