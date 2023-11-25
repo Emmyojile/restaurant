@@ -6,3 +6,12 @@ export type Menutypes = {
   img: String;
   color: String;
 }[];
+
+export type ProductTypes = {
+  id: String;
+  title: String;
+  desc?: String;
+  img?: String;
+  price: Number;
+  optons?: { title: String; additionalPrice: Number }[];
+};
