@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const getData = async () => {
+const getData = async (category:string) => {
   const res = await fetch(`http://localhost:3000/api/products?cat=${category}`,{
     cache:"no-store",
   });
