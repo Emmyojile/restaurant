@@ -1,6 +1,8 @@
-import { ProductTypes } from "@/types";
 import Image from "next/image";
 import React from "react";
+import { ProductTypes } from "@/types";
+import { featuredProducts } from "@/data";
+
 
 const getData = async () => {
   const res = await fetch("http://localhost:3000/api/products", {
@@ -14,7 +16,7 @@ const getData = async () => {
 
 const Featured = async () => {
 
-  const featuredProducts:ProductTypes[] = await getData();
+  // const featuredProducts:ProductTypes[] = await getData();
   return (
     <div className="w-screen overflow-x-scroll text-blue-500">
       {/* WRAPPER */}
@@ -50,3 +52,23 @@ const Featured = async () => {
 };
 
 export default Featured;
+
+
+/*
+
+*/
+
+/*
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+NEXTAUTH_URL =http://localhost:3000
+NEXTAUTH_URL_INTERNAL =http://localhost:3000
+DATABASE_URL="postgresql://postgres:emmy1599@localhost:5432/postgres?schema=public"
+NEXTAUTH_SECRET="password"
+GOOGLE_CLIENT_ID=531374619769-b2cn7vaj4btu1n4knklurd3ksj1iouqf.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+*/

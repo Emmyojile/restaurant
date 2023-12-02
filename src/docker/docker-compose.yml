@@ -8,4 +8,4 @@ services:
       POSTGRES_PASSWORD: emmy1599
       POSTGRES_DB: restaurant
     ports:
-      - 5431:5431
+      - 5432:5432
