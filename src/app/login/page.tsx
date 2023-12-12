@@ -23,7 +23,9 @@ const LoginPage = () => {
         <div className="p-10 flex flex-col gap-8 md:w-1/2">
           <h1 className=" font-bold text-xl xl:text-3xl">Welcome</h1>
           <p>Log into your account or create a new one using social buttons</p>
-          <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md" onClick={()=>signIn("google")}>
+          <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md"
+          onClick={()=>signIn("gitlab")}
+          >
             <Image
               src="/google.png"
               alt=""
@@ -31,9 +33,11 @@ const LoginPage = () => {
               height={20}
               className=" object-contain"
             />
-            <span>Sign in WIth Google</span>
+            <span>Sign in With Google</span>
           </button>
-          <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md">
+          <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md"
+          onClick={()=>signIn("gitlab")}
+          >
             <Image
               src="/facebook.png"
               alt=""
@@ -41,7 +45,7 @@ const LoginPage = () => {
               height={20}
               className=" object-contain"
             />
-            <span>Sign in WIth Facebook</span>
+            <span>Sign in WIth google</span>
           </button>
           <p className=" text-sm rounded-lg">
             Have a Problem?
