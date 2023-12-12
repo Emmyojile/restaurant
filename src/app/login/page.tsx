@@ -24,7 +24,7 @@ const LoginPage = () => {
           <h1 className=" font-bold text-xl xl:text-3xl">Welcome</h1>
           <p>Log into your account or create a new one using social buttons</p>
           <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md"
-          onClick={()=>signIn("gitlab")}
+          onClick={()=>signIn("google")}
           >
             <Image
               src="/google.png"
@@ -36,7 +36,7 @@ const LoginPage = () => {
             <span>Sign in With Google</span>
           </button>
           <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md"
-          onClick={()=>signIn("gitlab")}
+          onClick={()=>signIn("google")}
           >
             <Image
               src="/facebook.png"
