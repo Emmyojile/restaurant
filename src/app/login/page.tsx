@@ -36,7 +36,6 @@ const LoginPage = () => {
             <span>Sign in With Google</span>
           </button>
           <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md"
-          onClick={()=>signIn("google")}
           >
             <Image
               src="/facebook.png"
