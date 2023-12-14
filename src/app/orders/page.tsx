@@ -1,4 +1,4 @@
-import React from "react";
+import { authOptions } from "@/utils/auth";
 
 const OrdersPage = () => {
   return (

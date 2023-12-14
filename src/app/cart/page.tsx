@@ -1,7 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import { authOptions } from "@/utils/auth";
+import { getServerSession } from "next-auth";
 
-const CartPage = () => {
+
+const CartPage = async() => {
+  const session = await getServerSession(authOptions);
+  console.log(session);
+  
+
   return (
     <div className="h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col text-blue-500 lg:flex-row ">
       {/* PRODUCT CONTAINER */}
