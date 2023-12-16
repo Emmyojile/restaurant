@@ -1,35 +1,11 @@
 services:
-  postgres:
-    image: postgres:15-alpine
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: emmyojile
+      POSTGRES_PASSWORD: emmy1599
+      POSTGRES_DB: western-restaurant
     ports:
       - 5432:5432
-    environment:
-      POSTGRES_DB: western-restaurant
-      POSTGRES_HOST_AUTH_METHOD: emmyojile
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# services:
-
-#   db:
-#     image: postgres
-#     restart: always
-#     environment:
-#       POSTGRES_USER: emmyojile
-#       POSTGRES_PASSWORD: emmy1599
-#       POSTGRES_DB: restaurant
-#     ports:
-#       - 5432:5432
